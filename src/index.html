@@ -3,42 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <style>
+    input[type=text] {
+        width: 100%;
+        padding: 12px 12px 12px 12px;
+        margin: 2px 2px 2px 2px;
+        box-sizing: border-box;
+        border: none;
+        /*border-bottom: 2px solid blue;*/
+    }
+    </style>
+
   </head>
   <body>
-    <h1>CIFRADO CÉSAR</h1><br>
-
-    <div>
-      <h2 id= key> <form>Ingresa tu número <em>key</em><br></h2>
-      <input id='introKey'  type='text' name='caja'><br>
-      <input type="button" value="Key-Num" onclick="encode();decode()"><br>
-    </div>
-    <br>
-
-    <div>
-    <h2 id= textIn> <form>Ingresa tu texto a cifrar. <br></h2>
-      <input id='ingresar'  type='text' name='cajota'><br>
-      <input type="button" value="Codificate" onclick="encode()"> <br>
+<div class="wrapper">
+    <div class="box1">
+    <h1> Messenger Z </h1><br>
     </div>
 
-    <div>
-       <h2>Este es tú texto cifrado:</h2><br>
-       <p id='b'> </p>
-     </div>
-    <br>
+    <div id= textIn class="box7"><form>
+      <input id='introKey'  type='text' name='introKey' style="WIDTH: 200px; HEIGHT: 60px; font-size: calc(10px + 1vw)"> <br>
+      <input id='keyNumber' type="button" value="Key Number" onclick="intdespl();desplaza()" style="WIDTH: 150px; HEIGHT: 50px; font-size: calc(10px + 1vw)">
+    </form></div>
 
-    <h2> Ingresa tu texto cifrado. </h2>
-    <div>
-      <input id='crip'  type='text' name='cajita'><br>
-      <input type="button" value="Decodificate" onclick="decode()"><br>
+    <div class="box2"><form><h2 id= textIn>Ingresa tu mensaje:</h2></div>
+    <div class="box4">
+      <input id='ingresarTxt'  type='text' name='ingresarTxt' style="WIDTH: 500px; HEIGHT: 200px; font-size:calc(20px + 1vw)"><br>
     </div>
+    <div class="box6"><br>
+      <input type="button" value="Codificate" onclick="getText()" style="WIDTH: 300px; HEIGHT: 70px; font-size:calc(20px + 1vw)"> <br>
 
-    <br>
-    <div>
-      <h2>Este es tú texto decifrado:</h2><br>
-      <p id='hhh'></P>
+  </form></div>
+
+    <div class="box3"><form ><h2> Ingresa tu mensaje cifrado.</h2></div>
+    <div class="box5">
+      <input id='decifMsg'  type='text' name='decifMsg' style="WIDTH: 700px; HEIGHT: 200px; font-size: calc(20px + 1vw)"><br>
     </div>
+    <div class="box8"> <br>
+      <input type="button" value="Decodificate" onclick="desenCryp()" style="WIDTH: 300px; HEIGHT: 70px;font-size: calc(20px + 1vw) "></form></div>
+
+    <div class="box9">
+      <form>
+       <!--h2>Este es tú texto cifrado:</h2><br-->
+       <p id='msgCriptado'> </p>
+      <!--h2>Este es tú texto decifrado:</h2><br-->
+      <p id='msgDecifrado'></p>
+    </form>
+    </div>
+</div>
+
     <div id="root"></div>
+    <link rel="stylesheet" href="style.css"/>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

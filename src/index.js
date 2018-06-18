@@ -6,11 +6,11 @@ const intdespl=()=>{
  }
 // Aquí se jala la cadena de texto que se desea cifrar.
   const  getText=()=>{
-    const string = document.getElementById('ingresar').value ;
+    const string = document.getElementById('ingresarTxt').value ;
   }
 // Aquí te imprime tu mensaje cifrado
   const encrypMessage =()=>{
- document.getElementById('b').innerHTML = back ;
+ document.getElementById('msgCriptado').innerHTML = (cipher.encode(back));
    }
 // En esta sección se introduce el mensaje encriptado y obtienes el mensaje
 //decifrado.
@@ -20,9 +20,9 @@ const desplaza=()=>{
  }
  // Se introduce mensaje encripatdo
   const desenCryp=()=>{
-  const string = document.getElementById('crip').value ;
+  const string = document.getElementById('decifMsg').value ;
 }
 // Se imprime el mensaje decifrado
   const decrypMessage=()=>{
-    return document.getElementById('hhh').innerHTML = outText;
+   document.getElementById('msgDecifrado').innerHTML = (cipher.encode(outText));
 }
