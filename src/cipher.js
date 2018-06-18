@@ -4,16 +4,13 @@
 window.cipher = {
 encode:(string, offset)=>{
 
-let introKey = document.getElementById('introKey');
-let ingresarTxt = document.getElementById('ingresar');
-let msgCriptado = document.getElementById('msgCriptado');
-let msgDecifrado= document.getElementById('msgDecifrado');
+
 let g = '';
 let outText= '';
 let numero = '';
 let back ='';
 let asigAlf = '';
-let offset = '';
+//let offset = '';
 let getAscii ='';
 let asciiFormula = '';
 let giveAscii = '';
@@ -51,6 +48,19 @@ console.log(g);
       },
 
 decode:(string, offset) =>{
+
+  let g = '';
+  let outText= '';
+  let numero = '';
+  let back ='';
+  let asigAlf = '';
+  //let offset = '';
+  let getAscii ='';
+  let asciiFormula = '';
+  let giveAscii = '';
+  let newAlf = '';
+
+
 //Se introduce el desplazamiento para colocarlo en la formula
          //offset = parseInt(document.getElementById('introKey').value) ;
          // Se crea una loop para asignar un índice a cada elemento de la cadena de texto

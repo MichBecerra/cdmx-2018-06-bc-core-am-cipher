@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 80px 300px 130px 350px;
     grid-gap: 15px;
+    font-family: 'Shrikhand', cursive;
 }
 
 .box1 {
@@ -33,7 +34,7 @@
 .box4 {
     grid-column: 1/3;
     grid-row: 3;
-    background-color: #663399;
+    background-color: #8B008B;
     font-size: 40px;
     text-align: center;
 }
@@ -41,7 +42,7 @@
 .box5 {
     grid-column: 3/6;
     grid-row: 3;
-    background-color: #663399;
+    background-color: 	#8B008B;
     font-size: 40px;
     text-align: center;
 }
@@ -80,6 +81,7 @@
 input{
   background-color: #663399 ;
   border: none;
+  font-family: 'Shrikhand', cursive;
   /*padding: 1em;
   margin: 1em;
   font-size: calc(20px + 1vw);
