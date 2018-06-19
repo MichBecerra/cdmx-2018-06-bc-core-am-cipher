@@ -14,14 +14,6 @@ const intdespl=()=>{
     document.getElementById('msgCriptado').innerHTML = (cipher.encode(string,intdespl()));
   }
 
-  // }
-// En esta sección se introduce el mensaje encriptado y obtienes el mensaje
-//decifrado.
-// Se introduce offset para poder decifrar
-/*const desplaza=()=>{
-  offset = parseInt(document.getElementById('introKey').value) ;
-  return offset;
-}*/
  // Se introduce mensaje encripatdo
   const desenCryp=()=>{
   const string = document.getElementById('decifMsg').value ;
